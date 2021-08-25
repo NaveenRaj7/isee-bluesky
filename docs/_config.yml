@@ -1,0 +1,5 @@
+name: ISEE-BLUESKY 2017
+markdown: kramdown
+baseurl: /isee2017-bluesky
+permalink: /blog/:year/:month/:day/:title/
+theme: jekyll-theme-dinky

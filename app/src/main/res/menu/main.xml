@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_category"
+        android:orderInCategory="100"
+        android:title="Create Category"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_project"
+        android:orderInCategory="100"
+        android:title="Create Project"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/filter_activities"
+        android:orderInCategory="100"
+        android:title="Filter"
+        app:showAsAction="never" />
+
+</menu>

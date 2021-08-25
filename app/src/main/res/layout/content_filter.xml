@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bluesky.activitytracker.Filter"
+    tools:showIn="@layout/activity_filter"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width= "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/fil_from_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_action_calendar"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="showDatePickerDialog" />
+
+        <TextView
+            android:id="@+id/filter_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="From"
+            android:onClick="showDatePickerDialog"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:typeface="monospace" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width= "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/fil_to_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_action_calendar"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="showDatePickerDialog" />
+
+        <TextView
+            android:id="@+id/filter_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="To"
+            android:onClick="showDatePickerDialog"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:typeface="monospace" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/filter_cat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+    </ListView>
+
+    <Button
+        android:id="@+id/fil_filter_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="filter_activities"
+        android:padding="10dp"
+        android:text="Filter"
+        android:typeface="monospace" />
+
+</LinearLayout>
